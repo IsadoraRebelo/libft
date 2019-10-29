@@ -5,9 +5,16 @@ The aim of this project is to code a C library regrouping usual functions that y
 The libft project builds on the concepts you learned during Day-06 of the bootcamp ie code a library of useful functions that you will be allowed to reuse in most of your C projects this year. This will save you a lot of precious time. The following assignments will have you write lines of code you already wrote during the bootcamp. See the libft project as a Bootcamp reminder and use it wisely to assess your level and progress.
 
 ## <b> General Considerations: </b><br>
-The first project of Codam (42 Network School), the full PDF can be found in this repository. <br>
-This library will be in constant change as I will be adding new functions that I find useful. <br>
-Simples use <i>make</i> to transform everything in a object.
+- The first project of Codam (42 Network School), the full PDF can be found in this repository. <br>
+- This library will be in constant change as I will be adding new functions that I find useful. <br>
+- Simples use <i>make</i> to transform everything in a object. <br>
+- Makefile commands: 
+```
+make
+make re
+make clean
+make fclean
+```
 
 ## <b> Functions you will find in this project: </b><br>
 ###### <b> Memory related: </b><br>
