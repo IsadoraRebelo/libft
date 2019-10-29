@@ -55,4 +55,10 @@ The libft project builds on the concepts you learned during Day-06 of the bootca
 - [putstr_fd](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_putstr_fd.c)
 - [putendl_fd](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_putendl_fd.c)
 - [putnbr_fd](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_putnbr_fd.c)
+- [lstnew](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_lstnew.c)
+- [lstdelone](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_lstdelone.c)
+- [lstdel](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_lstdel.c)
+- [lstadd](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_lstadd.c)
+- [lstiter](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_lstiter.c)
+- [lstmap](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_lstmap.c)
 
