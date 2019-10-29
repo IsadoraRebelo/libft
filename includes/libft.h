@@ -6,7 +6,7 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/19 16:58:24 by ihering-       #+#    #+#                */
-/*   Updated: 2019/07/01 10:46:49 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/29 12:29:18 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,6 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 /* Others */
-
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 int				get_next_line(const int fd, char **line);
