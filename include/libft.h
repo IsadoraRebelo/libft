@@ -6,7 +6,7 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/19 16:58:24 by ihering-       #+#    #+#                */
-/*   Updated: 2019/10/29 12:31:53 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/29 12:41:04 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ char			**ft_strsplit(char const *s, char c);
 size_t			ft_strlen(const char *s);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 
-/* Testes */
+/* Checks */
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);

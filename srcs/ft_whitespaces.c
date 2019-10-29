@@ -6,11 +6,11 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/25 10:29:27 by ihering-       #+#    #+#                */
-/*   Updated: 2019/07/01 10:09:17 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/29 16:42:54 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../include/libft.h"
 
 int		ft_whitespaces(char s)
 {

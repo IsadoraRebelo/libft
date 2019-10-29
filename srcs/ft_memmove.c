@@ -6,11 +6,11 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/12 11:39:51 by ihering-       #+#    #+#                */
-/*   Updated: 2019/07/01 10:11:49 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/29 16:42:54 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../include/libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

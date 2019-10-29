@@ -6,11 +6,11 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/17 10:16:14 by ihering-       #+#    #+#                */
-/*   Updated: 2019/07/01 10:15:09 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/29 16:42:34 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../include/libft.h"
 
 int		ft_atoi(const char *str)
 {
