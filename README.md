@@ -7,7 +7,7 @@ The libft project builds on the concepts you learned during Day-06 of the bootca
 ## <b> General Considerations: </b><br>
 The first project of Codam (42 Network School), the full PDF can be found in this repository. <br>
 This library will be in constant change as I will be adding new functions that I find useful. <br>
-Simples use <i>make</i> to use.
+Simples use <i>make</i> to transform everything in a object.
 
 ## <b> Functions you will find in this project: </b><br>
 ###### <b> Memory related: </b><br>
