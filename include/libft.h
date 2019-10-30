@@ -6,7 +6,7 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/19 16:58:24 by ihering-       #+#    #+#                */
-/*   Updated: 2019/10/29 12:41:04 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/30 11:06:20 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <string.h>
 
-# define BUFF_SIZE 42
+# define BUFF_SIZE 547
 # define ENDL '\n'
 
 typedef struct	s_list
@@ -104,5 +104,6 @@ int				get_next_line(const int fd, char **line);
 int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
 void			ft_swap(int *a, int *b);
+int				ft_sqrt(int nb);
 
 #endif
