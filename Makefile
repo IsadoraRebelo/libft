@@ -3,18 +3,10 @@
 #                                                         ::::::::             #
 #    Makefile                                           :+:    :+:             #
 #                                                      +:+                     #
-#    By: ihering- <marvin@codam.nl>                   +#+                      #
+#    By: ihering- <ihering-@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
-#    Created: 2019/01/19 17:44:26 by ihering-       #+#    #+#                 #
-<<<<<<< HEAD
-#    Updated: 2019/10/30 14:19:03 by ihering-      ########   odam.nl          #
-=======
-<<<<<<< HEAD
-#    Updated: 2019/10/30 11:08:07 by ihering-      ########   odam.nl          #
-=======
-#    Updated: 2019/10/30 11:12:56 by ihering-      ########   odam.nl          #
->>>>>>> 25d9c1ce67af94f509b12f6f7952390a95bab98a
->>>>>>> 7c3312eeee55f40bbeb700115c7abb5f5fec08fc
+#    Created: 2019/10/30 14:27:51 by ihering-       #+#    #+#                 #
+#    Updated: 2019/10/30 14:29:37 by ihering-      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,15 +25,7 @@ FILES = ft_whitespaces ft_memset ft_bzero ft_memcpy ft_memccpy \
 		ft_putchar_fd ft_putstr_fd ft_putendl_fd ft_putnbr_fd \
 		ft_lstadd ft_lstdel ft_lstdelone ft_lstiter ft_lstmap \
 		ft_lstnew ft_leng ft_swap ft_strarrdel get_next_line \
-<<<<<<< HEAD
 		ft_sqrt ft_error
-=======
-		ft_sqrt
-<<<<<<< HEAD
-=======
->>>>>>> 7c3312eeee55f40bbeb700115c7abb5f5fec08fc
-
->>>>>>> 25d9c1ce67af94f509b12f6f7952390a95bab98a
 
 OBJDIR = obj/
 SRCDIR = srcs/
@@ -62,7 +46,7 @@ CCHF:=.cache_exists
 all: $(NAME)
 
 $(NAME): $(OBJ)
-		@echo "$(BLUE_1)Libft done $(RESET)"
+		@echo "$(BLUE_1)Done $(RESET)"
 		@ar rc $(NAME) $(OBJ)
 		@ranlib $(NAME)
 
@@ -80,10 +64,11 @@ $(CCHF):
 clean:
 		@rm -rf $(OBJDIR)
 		@rm -f $(CCHF)
+		@echo "$(BLUE_3)Cleaning... Done $(RESET)"
 
 fclean: clean
 		@rm -rf $(NAME)
-
+		@echo "$(BLUE_2)Erasing Everything... Done$(RESET)"
 re: fclean all
 
 .PHONY: all clean fclean re

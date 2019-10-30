@@ -3,18 +3,10 @@
 /*                                                        ::::::::            */
 /*   libft.h                                            :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/19 16:58:24 by ihering-       #+#    #+#                */
-<<<<<<< HEAD
-/*   Updated: 2019/10/30 14:19:14 by ihering-      ########   odam.nl         */
-=======
-<<<<<<< HEAD
-/*   Updated: 2019/10/30 11:06:20 by ihering-      ########   odam.nl         */
-=======
-/*   Updated: 2019/10/30 11:13:11 by ihering-      ########   odam.nl         */
->>>>>>> 25d9c1ce67af94f509b12f6f7952390a95bab98a
->>>>>>> 7c3312eeee55f40bbeb700115c7abb5f5fec08fc
+/*   Created: 2019/10/30 14:27:41 by ihering-       #+#    #+#                */
+/*   Updated: 2019/10/30 14:27:45 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
