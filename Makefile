@@ -6,7 +6,11 @@
 #    By: ihering- <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/01/19 17:44:26 by ihering-       #+#    #+#                 #
+<<<<<<< HEAD
 #    Updated: 2019/10/30 11:08:07 by ihering-      ########   odam.nl          #
+=======
+#    Updated: 2019/10/30 11:12:56 by ihering-      ########   odam.nl          #
+>>>>>>> 25d9c1ce67af94f509b12f6f7952390a95bab98a
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +30,10 @@ FILES = ft_whitespaces ft_memset ft_bzero ft_memcpy ft_memccpy \
 		ft_lstadd ft_lstdel ft_lstdelone ft_lstiter ft_lstmap \
 		ft_lstnew ft_leng ft_swap ft_strarrdel get_next_line \
 		ft_sqrt
+<<<<<<< HEAD
+=======
+
+>>>>>>> 25d9c1ce67af94f509b12f6f7952390a95bab98a
 
 OBJDIR = obj/
 SRCDIR = srcs/

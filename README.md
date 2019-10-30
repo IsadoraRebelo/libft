@@ -93,5 +93,6 @@ make fclean
 - [itoa](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_itoa.c)
 - [get_next_line](https://github.com/IsadoraRebelo/libft/blob/master/srcs/get_next_line.c)
 - [swap](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_swap.c)
+- [sqrt](https://github.com/IsadoraRebelo/libft/blob/master/srcs/ft_sqrt.c)
 
 
