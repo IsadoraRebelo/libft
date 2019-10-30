@@ -6,7 +6,7 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/19 16:58:24 by ihering-       #+#    #+#                */
-/*   Updated: 2019/10/30 11:13:11 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/30 14:19:14 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,6 @@ int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
 void			ft_swap(int *a, int *b);
 int				ft_sqrt(int nb);
+void			ft_error(char *str);
 
 #endif
