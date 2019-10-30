@@ -6,7 +6,7 @@
 #    By: ihering- <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/01/19 17:44:26 by ihering-       #+#    #+#                 #
-#    Updated: 2019/10/29 17:01:53 by ihering-      ########   odam.nl          #
+#    Updated: 2019/10/30 11:12:56 by ihering-      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,8 @@ FILES = ft_whitespaces ft_memset ft_bzero ft_memcpy ft_memccpy \
 		ft_itoa ft_putchar ft_putstr ft_putendl ft_putnbr \
 		ft_putchar_fd ft_putstr_fd ft_putendl_fd ft_putnbr_fd \
 		ft_lstadd ft_lstdel ft_lstdelone ft_lstiter ft_lstmap \
-		ft_lstnew ft_leng ft_swap ft_strarrdel get_next_line
+		ft_lstnew ft_leng ft_swap ft_strarrdel get_next_line \
+		ft_sqrt
 
 
 OBJDIR = obj/
