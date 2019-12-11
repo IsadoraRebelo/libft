@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncmp.c                                       :+:    :+:            */
+/*   ft_strrev.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: lsmienk <lsmienk@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/15 20:13:02 by ihering-       #+#    #+#                */
-/*   Updated: 2019/12/10 14:20:01 by ihering-      ########   odam.nl         */
+/*   Created: 2019/03/26 10:40:57 by lsmienk        #+#    #+#                */
+/*   Updated: 2019/12/11 11:04:03 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strrev(char *s)
 {
-	if (!n)
-		return (0);
-	while (*s1 != '\0' && *s1 == *s2 && n)
+	int		i;
+	int		len;
+	char	temp;
+
+	i = 0;
+	len = (int)ft_strlen(s);
+	while ((len - 1) > i)
 	{
-		s1++;
-		s2++;
-		n--;
+		temp = s[i];
+		s[i] = s[len - 1];
+		s[len - 1] = temp;
+		i++;
+		len--;
 	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	return (s);
 }

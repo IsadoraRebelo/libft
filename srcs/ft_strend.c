@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstmap.c                                        :+:    :+:            */
+/*   ft_strend.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/24 10:58:15 by ihering-       #+#    #+#                */
-/*   Updated: 2019/12/10 15:24:42 by ihering-      ########   odam.nl         */
+/*   Created: 2019/12/11 10:58:09 by ihering-       #+#    #+#                */
+/*   Updated: 2019/12/11 11:05:04 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+char	*ft_strend(char *res, int neg, int len)
 {
-	t_list	*list;
-	t_list	*res;
-
-	if (!lst)
-		return (NULL);
-	list = f(lst);
-	res = list;
-	while (lst->next != NULL)
+	if (neg == 1)
 	{
-		lst = lst->next;
-		list->next = f(lst);
-		if (f(list) == NULL)
-			return (NULL);
-		list = list->next;
+		res[len] = '-';
+		len++;
 	}
+	res[len] = '\0';
+	res = ft_strrev(res);
 	return (res);
 }

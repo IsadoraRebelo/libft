@@ -6,7 +6,7 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/28 13:58:32 by ihering-       #+#    #+#                */
-/*   Updated: 2019/10/29 16:42:54 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/12/10 14:22:13 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ char	*ft_strndup(const char *s1, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!(s2 = ft_strnew(n)))
+	s2 = ft_strnew(n);
+	if (!(s2))
 		return (NULL);
 	while (s1[i] && i < n)
 	{
@@ -39,7 +40,8 @@ int		get_copy(char **line, char *content, char c)
 	{
 		i++;
 	}
-	if (!(*line = ft_strndup(content, i)))
+	*line = ft_strndup(content, i);
+	if (!*line)
 		return (0);
 	return (i);
 }
@@ -68,8 +70,10 @@ int		read_line(const int fd, char **content)
 	char	*temp;
 	char	buf[BUFF_SIZE + 1];
 
-	while ((my_read = read(fd, buf, BUFF_SIZE)))
+	my_read = 1;
+	while (my_read)
 	{
+		my_read = read(fd, buf, BUFF_SIZE);
 		buf[my_read] = '\0';
 		temp = *content;
 		if (*content)
@@ -87,7 +91,7 @@ int		read_line(const int fd, char **content)
 	return (my_read);
 }
 
-int		get_next_line(const int fd, char **line)
+int		ft_get_next_line(const int fd, char **line)
 {
 	char			buf[BUFF_SIZE + 1];
 	size_t			result;

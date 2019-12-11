@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncmp.c                                       :+:    :+:            */
+/*   ft_intlen.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/15 20:13:02 by ihering-       #+#    #+#                */
-/*   Updated: 2019/12/10 14:20:01 by ihering-      ########   odam.nl         */
+/*   Created: 2019/12/11 11:00:36 by ihering-       #+#    #+#                */
+/*   Updated: 2019/12/11 11:00:37 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_intlen(int nb)
 {
-	if (!n)
-		return (0);
-	while (*s1 != '\0' && *s1 == *s2 && n)
+	int	len;
+
+	len = 0;
+	if (nb < 0)
 	{
-		s1++;
-		s2++;
-		n--;
+		len = 1;
+		nb = nb * -1;
 	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	while (nb > 1)
+	{
+		nb = nb / 10;
+		len++;
+	}
+	return (len);
 }

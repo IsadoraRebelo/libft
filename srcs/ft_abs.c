@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncmp.c                                       :+:    :+:            */
+/*   ft_abs.c                                           :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/15 20:13:02 by ihering-       #+#    #+#                */
-/*   Updated: 2019/12/10 14:20:01 by ihering-      ########   odam.nl         */
+/*   Created: 2019/12/11 10:57:33 by ihering-       #+#    #+#                */
+/*   Updated: 2019/12/11 10:57:35 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_abs(int i)
 {
-	if (!n)
-		return (0);
-	while (*s1 != '\0' && *s1 == *s2 && n)
-	{
-		s1++;
-		s2++;
-		n--;
-	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	if (i < 0)
+		return (-i);
+	return (i);
 }

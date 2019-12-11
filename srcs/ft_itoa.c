@@ -6,7 +6,7 @@
 /*   By: ihering- <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/19 12:24:04 by ihering-       #+#    #+#                */
-/*   Updated: 2019/10/29 16:42:54 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/12/10 15:25:39 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,25 @@
 
 char			*ft_itoa(int n)
 {
-	char	*str;
 	int		len;
+	int		sign;
+	char	*res;
 
-	len = ft_leng(n);
-	str = ft_strnew(len);
-	if (str == NULL)
-		return (NULL);
+	sign = 0;
+	len = ft_intlen(n);
+	if (n == 0)
+		return (ft_strdup("0"));
 	if (n < 0)
-		str[0] = '-';
-	else
-		n = 0 - n;
-	while (n / 10)
+		sign = 1;
+	res = ft_strnew(len);
+	len = 0;
+	if (!res)
+		return (NULL);
+	while (n / 10 != 0 || n % 10 != 0)
 	{
-		str[--len] = (0 - (n % 10)) + '0';
+		res[len] = ft_abs(n % 10) + '0';
 		n /= 10;
+		len++;
 	}
-	str[--len] = (0 - (n % 10)) + '0';
-	return (str);
+	return (ft_strend(res, sign, len));
 }

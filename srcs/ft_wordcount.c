@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncmp.c                                       :+:    :+:            */
+/*   ft_wordcount.c                                     :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/15 20:13:02 by ihering-       #+#    #+#                */
-/*   Updated: 2019/12/10 14:20:01 by ihering-      ########   odam.nl         */
+/*   Created: 2019/12/11 10:54:15 by ihering-       #+#    #+#                */
+/*   Updated: 2019/12/11 10:54:18 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_wordcount(char const *s, char c)
 {
-	if (!n)
-		return (0);
-	while (*s1 != '\0' && *s1 == *s2 && n)
+	int	count;
+	int i;
+
+	count = 0;
+	i = 0;
+	while (s[i] != '\0')
 	{
-		s1++;
-		s2++;
-		n--;
+		if (s[i] != c && (s[i + 1] == c || s[i + 1] == '\0'))
+			count++;
+		i++;
 	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	return (count);
 }

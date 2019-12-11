@@ -6,7 +6,7 @@
 /*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/30 14:27:41 by ihering-       #+#    #+#                */
-/*   Updated: 2019/10/30 14:27:45 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/12/11 11:04:30 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,5 +106,11 @@ char			*ft_itoa(int n);
 void			ft_swap(int *a, int *b);
 int				ft_sqrt(int nb);
 void			ft_error(char *str);
+int				ft_wordcount(char const *s, char c);
+int				ft_strnlen(char *str, int i, char c);
+char			*ft_strend(char *res, int neg, int len);
+int				ft_abs(int i);
+int				ft_intlen(int nb);
+char			*ft_strrev(char *s);
 
 #endif
